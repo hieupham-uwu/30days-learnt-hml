@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4daf54;
+  --height-search-box: 70px;
+  --width-search-box: 70px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+  height: var(--height-search-box);
+  width: var(--width-search-box);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.active {
+  width: 390px;
+}
+
+.input-box {
+  position: absolute;
+  height: var(--height-search-box);
+  padding: 20px 35px;
+  padding-right: 100px;
+  outline: none;
+  background: black;
+  color: white;
+  font-size: 4rem;
+}
+
+.search-btn {
+  position: absolute;
+  height: var(--height-search-box);
+  width: var(--width-search-box);
+  right: 0;
+  font-size: 3rem;
+  color: black;
+  background: white;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
